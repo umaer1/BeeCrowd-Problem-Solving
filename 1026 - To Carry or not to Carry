@@ -1,0 +1,17 @@
+import java.util.*
+
+fun main(args: Array<String>) {
+
+ val scanner = Scanner(System.`in`)
+
+    while (scanner.hasNextLong()) {
+        val A = scanner.nextLong()
+        val B = scanner.nextLong()
+
+        val xor = A xor B
+
+        println(xor)
+    }
+    scanner.close()
+	
+}
