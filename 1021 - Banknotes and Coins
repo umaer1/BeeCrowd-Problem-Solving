@@ -1,0 +1,29 @@
+import java.util.*
+
+fun main(args: Array<String>) {
+
+	val scanner = Scanner(System.`in`)
+    var N = scanner.nextDouble()
+
+    println("NOTAS:")
+    var notes = intArrayOf(100, 50, 20, 10, 5, 2)
+
+    for(i in notes) {
+        val count_notes = N.toInt()/ i
+        println("${count_notes} nota(s) de R$ ${"%.2f".format(i.toDouble())}")
+        N = N % i.toDouble()
+    }
+
+    println("MOEDAS:")
+
+    //floating point precision
+    var cents = (N * 100).toInt()
+    var coins = intArrayOf(100, 50, 25, 10, 5, 1)
+
+    for (i in coins) {
+        val coin_count = cents/i
+        println("${coin_count} moeda(s) de R$ ${"%.2f".format(i/100.0)}")
+        cents = cents % i
+    }
+	
+}
