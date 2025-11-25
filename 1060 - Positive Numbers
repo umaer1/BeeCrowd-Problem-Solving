@@ -1,0 +1,12 @@
+import java.util.*
+
+fun main(args: Array<String>) {
+    var sum = 0
+    for (i in 1..6) {
+        val inp = readLine()?.toFloatOrNull() ?: 0.0f
+        if (inp > 0) {
+            sum += 1
+        }
+    }
+    println("$sum valores positivos")
+}
