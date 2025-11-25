@@ -1,0 +1,14 @@
+import java.util.*
+
+fun main(args: Array<String>) {
+
+   val scanner = Scanner(System.`in`)
+    val x = scanner.nextInt()
+
+    for (i in 1..x) {
+        if (i %2 != 0){
+            println(i)
+        }
+    }
+
+}
