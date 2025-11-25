@@ -1,0 +1,18 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int x,i;
+    char a[50];
+    
+    scanf("%d", &x);
+
+    while(x--) {
+      
+        scanf("%s\n", a); 
+            
+      printf("gzuz\n");  
+    }
+    
+    return 0;
+}
