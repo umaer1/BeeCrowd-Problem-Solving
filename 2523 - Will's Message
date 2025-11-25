@@ -1,0 +1,25 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    char string[50];
+    int x, numbers;
+ 
+ 
+    while(scanf("%s", string) != EOF) {
+ 
+    scanf("%d", &x);
+ 
+    while(x--) {
+        scanf("%d", &numbers);
+        printf("%c", string[numbers-1]);
+        
+    }
+    printf("\n");
+    }
+ 
+    
+    return 0;
+}
+
+
