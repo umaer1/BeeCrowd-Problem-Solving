@@ -1,0 +1,45 @@
+import java.util.*
+
+fun main(args: Array<String>) {
+
+val salary = readLine()!!.toDouble()
+
+        var total = 0.0
+        var incentive = 0.0
+        var percentage = 0
+
+        if (salary <= 400.00) {
+            percentage = 15
+            incentive = salary * 0.15
+            total = salary + incentive
+        }
+
+        else if (salary <= 800.00) {
+            percentage = 12
+            incentive = salary * 0.12
+            total = salary + incentive
+        }
+
+        else if (salary <= 1200.00) {
+            percentage = 10
+            incentive = salary * 0.10
+            total = salary + incentive
+        }
+
+        else if (salary <= 2000.00) {
+            percentage = 7
+            incentive = salary * 0.07
+            total = salary + incentive
+        }
+
+        else {
+            percentage = 4
+            incentive = salary * 0.04
+            total = salary + incentive
+        }
+
+        println(String.format("Novo salario: %.2f", total))
+        println(String.format("Reajuste ganho: %.2f", incentive))
+        println("Em percentual: $percentage %")
+	
+}
