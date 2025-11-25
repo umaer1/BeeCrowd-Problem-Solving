@@ -1,0 +1,26 @@
+import java.util.*
+
+fun main(args: Array<String>) {
+
+val input = readLine()!!.split(" ").map{it.toInt()}
+    //val numbers = input.split(" ")
+    //val list = numbers.map{it.toInt() }
+
+    val ih = input[0]   // start hour
+    val im = input[1]   // start minute
+    val fh = input[2]   // end hour
+    val fm = input[3]   // end minute
+
+    var d = (fh*60+fm) - (ih*60+im)
+
+    if(d<= 0) {
+        d += (24*60)
+        //println(d)
+    }
+    val hour = d/60
+    val min = d%60
+//else{
+    println("O JOGO DUROU $hour HORA(S) E $min MINUTO(S)")
+    //println(d)
+	
+}
