@@ -1,0 +1,26 @@
+import java.util.*
+
+fun main(args: Array<String>) {
+
+	/**
+	 * Escreva a sua solução aqui
+	 * Code your solution here
+	 * Escriba su solución aquí
+	 */
+	 even()
+	
+}
+
+fun even() {
+    val array = IntArray(101)
+    for(i in 1 until array.size) {
+        array[i] = i
+    }
+    
+    for(j in 1 until array.size) {
+        val a = array[j] %2 
+        if( a == 0) {
+            println(array[j])
+        }
+    }
+}
