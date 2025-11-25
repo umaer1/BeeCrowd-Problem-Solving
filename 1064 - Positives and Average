@@ -1,0 +1,14 @@
+count = 0
+sum = 0.0
+
+for _ in range(6):
+    value = float(input())
+    if value > 0:
+        count += 1
+        sum += value
+
+print(f"{count} valores positivos")
+
+if count > 0:
+    average = sum / count
+    print(f"{average:.1f}")
