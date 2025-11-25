@@ -1,0 +1,22 @@
+import java.util.*
+
+fun main(args: Array<String>) {
+
+    var Count = 0
+    var sum = 0.0
+
+    for(i in 1..6){
+        val number = readLine()!!.toDouble()
+        if (number > 0) {
+            Count++
+            sum += number
+        }
+    }
+
+    if (Count > 0) {
+        val average = sum / Count
+        println("$Count valores positivos")
+        println("%.1f".format(average))
+    }
+
+}
