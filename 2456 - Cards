@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d,e,i;
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    
+    if(e>d && e>c && e>b && e>a && d>a && d>b && d>c && c>a && c>b && b>a) {
+        printf("C\n");
+    }
+    
+    else if(e<d && e<c && e<b && e<a && d<a && d<b && d<c && c<a && c<b && b<a) {
+        printf("D\n");
+    }
+    
+    else{
+      printf("N\n");
+    }
+    return 0;
+}
